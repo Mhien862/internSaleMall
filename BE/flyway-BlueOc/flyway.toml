@@ -1,0 +1,24 @@
+databaseType = "PostgreSql"
+name = "flyway-BlueOc"
+id = "f608a0db-aeb5-4f68-9494-1e21260c7c8e"
+
+[flywayDesktop]
+developmentEnvironment = "development"
+shadowEnvironment = "shadow"
+schemaModel = "./schema-model"
+
+[redgateCompare]
+filterFile = "filter.rgf"
+
+[redgateCompare.postgres.options.ignores]
+ignoreNewlinesInTextObjects = "off"
+
+[flyway]
+mixed = true
+outOfOrder = true
+locations = [ "filesystem:migrations" ]
+validateMigrationNaming = true
+
+[environments.target1]
+url = "jdbc:postgresql://db.ybqcnvtycrfpfiutxltz.supabase.co:5432/postgres"
+schemas = [ "public" ]
