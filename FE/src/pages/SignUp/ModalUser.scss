@@ -1,0 +1,237 @@
+.modal-user,
+.modal-active,
+.modal-edit {
+    overflow-x: hidden;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    .modal-content {
+        position: relative;
+        
+        border-radius: 3px;
+        width: 100px;
+        padding: 100vh 0px;
+        border: none;
+        min-height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            width: 100%;
+            background-color: white;
+            text-align: left;
+            margin: 0 auto;
+            font-family: sans-serif;
+            font-size: 16px;
+            padding: 24px;
+            color: #000000;
+        }
+
+        .title {
+            padding: 0px;
+            padding-bottom: 5px;
+
+            p {
+                margin: 0px;
+                padding: 0px;
+                font-size: 20px;
+                line-height: 24px;
+                margin-bottom: 5px;
+                color: #172B4D;
+            }
+
+            span {
+                line-height: 20px;
+            }
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+
+            .label {
+                vertical-align: text-top;
+                color: #FF0000;
+                margin-left: 2px;
+                line-height: 20px;
+            }
+
+            .date-picker {
+                width: 100%;
+
+                input {
+                    margin: 0;
+                    display: inline-block;
+                    box-sizing: border-box;
+                    line-height: 1.5;
+                    font-size: 14px;
+                    font-weight: 400;
+                    background-color: #FAFBFC;
+                    padding: 0px;
+                    color: #7A869A;
+                }
+
+                button:active {
+                    outline: none;
+                    border: none;
+                }
+
+                button:focus {
+                    outline: none;
+                    border: none;
+                }
+            }
+        }
+
+        .validate {
+            margin-bottom: 0px;
+        }
+
+        .input-pass {
+            position: relative;
+            display: flex;
+            align-items: center;
+        }
+
+        .alert-input {
+            font-size: 11px;
+            line-height: 14px;
+
+            i {
+                font-size: 12px;
+            }
+        }
+
+        label {
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .form-control {
+            font-size: 14px;
+            margin: 4px 0px;
+            background-color: #FAFBFC;
+            border: 2px solid #DFE1E6;
+            padding: 5px 6px;
+            height: 35px;
+            color: #7A869A;
+        }
+
+        .form-control:focus {
+            border: 2px solid rgba(13, 110, 253, 0.5);
+        }
+
+        .form-select {
+            font-size: 14px;
+            margin: 4px 0px;
+            height: 35px;
+            background-color: #FAFBFC;
+            border: 2px solid #DFE1E6;
+            padding: 5px 2px;
+            color: #7A869A;
+        }
+
+        .form-select:focus {
+            border: 2px solid rgba(13, 110, 253, 0.5);
+        }
+
+        .missing {
+
+            input,
+            select {
+                border: 1px solid red;
+            }
+        }
+
+        .btn {
+            border-radius: 3px;
+        }
+
+        #button {
+            text-align: right;
+        }
+
+        .button-save {
+            background: #0052CC;
+            color: white;
+        }
+
+        .button-discard {
+            background: none;
+        }
+
+        #additional-info {
+            background: none;
+            -webkit-user-select: none;
+            -webkit-touch-callout: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        #additional-info {
+            font-size: 15px;
+            color: black;
+            cursor: pointer;
+
+            i {
+                margin-left: 5px;
+                font-size: 10px;
+            }
+        }
+
+        #additional-info-content {
+            margin-top: 5px;
+            padding-top: 3px;
+        }
+
+        select {
+            color: #7A869A;
+        }
+
+        .button-disable {
+            background-color: #DE350B;
+            color: white;
+        }
+    }
+
+    .modal-content:focus {
+        border: none;
+        outline: none;
+    }
+}
+
+.active {
+    .title {
+        span {
+            margin: 10px 0;
+            font-size: 14px;
+            line-height: 20px;
+        }
+    }
+}
+
+.modal-active {
+    .modal-content {
+        .container {
+            .title {
+                margin-bottom: 15px;
+
+                p {
+                    display: flex;
+                    align-items: center;
+
+                    img {
+                        margin-right: 7px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.modal-content {
+    background-color: #f4f2f2;
+}

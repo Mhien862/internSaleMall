@@ -13,7 +13,7 @@ const getCourses = async (data) => {
     }
 
     let courses = await coursesDAL.findOneCourses(data.query)
-    let schedule = await coursesDAL.getSchedule({ course_id: coursesId, detail: data.query.detail })
+  
     if (!courses) {
       throw {
         code: 400,

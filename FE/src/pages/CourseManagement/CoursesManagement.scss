@@ -1,0 +1,132 @@
+.courses-management-container {
+    padding: 15px;
+    padding-top: 0;
+    color: #172B4D;
+
+    .courses-management-content {
+        width: 100%;
+
+        .btn {
+            font-weight: 400;
+            height: 32px;
+            border-radius: 2px;
+            background-color: #0052CC;
+            color: #FFFFFF;
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .btn:active {
+            background-color: #0359d8;
+        }
+
+        .header {
+            width: 100%;
+
+            .main-content {
+                width: 100%;
+                height: 32px;
+                justify-content: space-between;
+
+                .title {
+                    width: 20%;
+                    text-align: left;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 28px;
+                }
+
+                .actions {
+                    float: left;
+                    width: 15%;
+                    justify-content: end;
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+
+                    .more {
+                        border: none;
+                        margin-left: 5px;
+                        line-height: 15px;
+                        width: 32px;
+                        height: 32px;
+                        border-radius: 2px;
+                        padding: 4px;
+                        background-color: #091E420A;
+                    }
+
+                    .more:hover {
+                        opacity: 0.7;
+                    }
+
+                    .more:active {
+                        opacity: 0.9;
+                    }
+                }
+            }
+
+            .filter-bar {
+                align-items: center;
+
+                .form-control {
+                    margin: 5px 0;
+                }
+
+                .search {
+                    text-align: left;
+                    position: relative;
+                    width: 240px;
+
+                    .form-control {
+                        font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+                        margin: 0;
+                        padding-left: 5px;
+                        height: 32px;
+                        width: 240px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        background-color: #FAFBFC;
+                        color: #7A869A;
+                        font-weight: 400;
+                    }
+
+                    .form-control::placeholder {
+                        font-weight: 400;
+                    }
+
+                    .search-icon {
+                        right: 6px;
+                        bottom: 5px;
+
+                        img {
+                            width: 24px;
+                            height: 24px;
+                        }
+                    }
+                }
+
+                .status-box {
+                    margin-left: 8px;
+                    width: 200px;
+                    max-height: 32px;
+
+                    .select-form {
+                        padding-left: 1px;
+                        width: 200px;
+                        font-size: 14px;
+                        line-height: 20px;
+                        font-weight: 400;
+                        text-align: left;
+
+                    }
+                }
+
+                .clear-filter {
+                    margin-left: 8px;
+                }
+            }
+        }
+    }
+}

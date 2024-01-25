@@ -1,0 +1,65 @@
+.container-detail-content {
+    margin-top: 5px;
+    text-align: left;
+    color: #1A2F36;
+    width: 100%;
+
+    .content-detail {
+        width: 100%;
+
+        .course-info {
+            padding: 5px 0px;
+
+            .title {
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 28px;
+                padding-right: 5px;
+            }
+
+            .content {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 20px;
+                margin: 0px;
+                color: #000000;
+            }
+        }
+
+        .body {
+            width: 100%;
+
+            .left {
+                width: 50%;
+            }
+
+            .right {
+                width: 50%;
+            }
+
+            .course-info {
+                display: flex;
+                align-items: center;
+
+                .title {
+                    width: 25%;
+                }
+
+                .reminder {
+                    width: 14px;
+                    text-align: right;
+                }
+            }
+
+            .students {
+                display: block;
+
+                .content {
+                    display: flex;
+                    justify-content: start;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}

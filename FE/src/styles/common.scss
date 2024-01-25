@@ -1,0 +1,125 @@
+.display-show {
+    display: inherit;
+}
+
+.alert-input {
+    color: red;
+    font-size: 13px;
+    visibility: hidden;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+
+    i {
+        font-size: 15px;
+        margin: 0px 5px;
+        display: flex;
+        align-self: center;
+    }
+
+    span {
+        position: relative;
+        top: 1px;
+    }
+}
+
+.missing {
+    .alert-input {
+        visibility: inherit;
+    }
+}
+
+.btn {
+    font-size: 14px;
+    font-weight: 500;
+    padding: 6px 12px;
+    line-height: 1.5;
+    outline: none;
+    border: none;
+}
+
+.btn:focus {
+    outline: none;
+    border: none;
+}
+
+input::-ms-reveal,
+input::-ms-clear {
+    display: none;
+}
+
+.icon-input {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.show-pass {
+    position: absolute;
+    border-radius: 50%;
+    right: 5px;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+
+.show-pass:hover {
+    background-color: rgba(0, 0, 0, .05);
+}
+
+.in-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+}
+
+.form-control {
+    width: 100%;
+    padding: 6px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form-control:focus {
+    outline: 4px solid #cfe2ff;
+    border: 1px solid rgba(13, 110, 253, 0.5);
+}
+
+.form-select {
+    width: 100%;
+    padding: 6px 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    line-height: 1.5;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.form-select:focus {
+    outline: 4px solid #cfe2ff;
+    border: 1px solid rgba(13, 110, 253, 0.5);
+}
+
+.toast-content {
+    font-size: 13px;
+}

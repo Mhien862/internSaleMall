@@ -1,0 +1,49 @@
+.search-assign-mentor {
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 7px;
+}
+
+.modal-content:focus {
+    border: none;
+    outline: none;
+}
+
+.modal-content {
+    label {
+        color: #172B4D;
+    }
+
+    .table-container {
+        min-height: auto;
+    }
+
+    .controller-assign {
+        padding-top: 10px;
+
+        .button-discard {
+            margin-right: 5px;
+        }
+    }
+}
+
+.remove-assign-mentor {
+    width: 60px;
+    padding: 0px 4px;
+    color: #42526E;
+    background-color: #DFE1E6;
+    text-align: center;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+.title-select {
+    p {
+        color: #172B4D;
+        font-size: 14px;
+        line-height: 20px;
+        margin: 0px 0px 10px;
+    }
+}

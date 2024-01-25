@@ -1,0 +1,132 @@
+.container-timeline {
+    align-items: center;
+    width: 150vh;
+
+    .start-end {
+        line-height: 16px;
+        font-size: 12px;
+        color: #000000;
+    }
+
+    .MuiTimeline-root {
+        flex-direction: row;
+        width: 90%;
+
+        .MuiTimelineItem-root {
+            font-size: 100%;
+            flex-direction: column;
+
+            .MuiTimelineSeparator-root {
+                flex-direction: row;
+
+                .MuiTimelineConnector-root {
+                    width: 100%;
+                    border: 1px solid #3D5AF1;
+                }
+
+                .MuiTimelineDot-root {
+                    box-shadow: none;
+
+                    .MuiTimelineConnector-root {
+                        width: 3px;
+                        height: 0px;
+                        border: 1px solid #3D5AF1;
+                    }
+
+                    .MuiTimelineDot-root {
+                        margin: 0px;
+                    }
+                }
+
+                .dot-outlined {
+                    padding: 5px 0px;
+                    align-items: center;
+                }
+            }
+
+            .MuiTimelineContent-root {
+                padding: 0px;
+                text-align: center;
+
+                .date-course {
+                    display: flex;
+                    justify-content: center;
+                    font-weight: 700;
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #3D5AF1;
+                    height: 100px;
+                }
+
+                .top {
+                    align-items: end;
+                }
+
+                .bottom {
+                    align-items: start;
+                }
+
+                .content-course {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    height: 100px;
+
+                    .text {
+                        height: 50px;
+                        font-size: 14px;
+                        line-height: 50px;
+                        font-weight: 500;
+                        padding: 5px;
+
+                        span {
+                            line-height: 21px;
+                            display: inline-block;
+                        }
+
+                        .top {
+                            vertical-align: bottom;
+                        }
+
+                        .bottom {
+                            vertical-align: top;
+                        }
+                    }
+
+                    .MuiTimelineDot-root {
+                        box-shadow: none;
+                        margin: 0px;
+                        align-self: center;
+                        padding: 1px;
+                        background-color: #DCDCDC;
+                    }
+
+                    .MuiTimelineConnector-root {
+                        width: 0px;
+                        border: 1px solid #DCDCDC;
+                        height: 30px;
+                    }
+                }
+
+            }
+        }
+
+        .MuiTimelineItem-root::before {
+            padding: 0;
+        }
+
+        .none-lessons {
+            width: 100%;
+
+            .MuiTimelineItem-root {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.full-page {
+    .container-timeline {
+        width: 180vh;
+    }
+}
